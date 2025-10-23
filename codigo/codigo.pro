@@ -13,6 +13,7 @@ SOURCES += \
         catalogo.cpp \
         credito.cpp \
         main.cpp \
+        mensaje_publicitario.cpp \
         sistema.cpp \
         usuario.cpp
 
@@ -27,5 +28,6 @@ HEADERS += \
     cancion.h \
     catalogo.h \
     credito.h \
+    mensaje_publicitario.h \
     sistema.h \
     usuario.h

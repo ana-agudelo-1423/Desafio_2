@@ -13,16 +13,34 @@ Usuario::Usuario(const std::string& nickname, const std::string& tipoMembresia,
     favoritos(nullptr),
     cantidadFavoritos(0),
     capacidadFavoritos(0),
+    // ⬇️⬇️⬇️ AGREGAR ESTAS LINEAS NUEVAS ⬇️⬇️⬇️
+    historialReproduccion(nullptr),
+    cantidadEnHistorial(0),
+    posicionActualHistorial(-1),
+    cancionActual(nullptr),
+    reproduciendo(false),
+    contadorCancionesReproducidas(0),
     usuarioSeguido(nullptr)
+// ⬆️⬆️⬆️ FIN DE AGREGADOS ⬆️⬆️⬆️
 {
+    // ⬇️⬇️⬇️ AGREGAR ESTO DENTRO DEL CONSTRUCTOR ⬇️⬇️⬇️
+    // Inicializar historial de reproducción (solo para premium)
+    if (esPremium()) {
+        historialReproduccion = new Cancion*[MAX_HISTORIAL];
+        for (int i = 0; i < MAX_HISTORIAL; ++i) {
+            historialReproduccion[i] = nullptr;
+        }
+    }
+    // ⬆️⬆️⬆️ FIN DE AGREGADOS ⬆️⬆️⬆️
+
     // Validar tipo de membresía
     if (tipoMembresia != "estandar" && tipoMembresia != "premium") {
-        this->tipoMembresia = "estandar"; // Valor por defecto
+        this->tipoMembresia = "estandar";
     }
 
     // Validar fecha
     if (!validarFecha(fechaInscripcion)) {
-        this->fechaInscripcion = 20240101; // Fecha por defecto
+        this->fechaInscripcion = 20240101;
     }
 }
 
@@ -48,6 +66,9 @@ Usuario::~Usuario()
 {
     // No eliminamos las canciones (NO somos dueños)
     delete[] favoritos;
+    if (historialReproduccion != nullptr) {
+        delete[] historialReproduccion;
+         }
 }
 
 // OPERADOR DE ASIGNACIÓN (sobrecarga requerida)
@@ -356,4 +377,138 @@ void Usuario::mostrarInformacion() const
 std::string Usuario::obtenerInfoResumida() const
 {
     return nickname + " (" + tipoMembresia + ") - " + ciudad + ", " + pais;
+}
+
+// ============================================================================
+// MÉTODOS DE NAVEGACIÓN EN HISTORIAL
+// ============================================================================
+
+bool Usuario::puedeRetroceder() const {
+    return esPremium() && posicionActualHistorial > 0;
+}
+
+bool Usuario::puedeAvanzar() const {
+    return esPremium() && posicionActualHistorial < cantidadEnHistorial - 1;
+}
+
+Cancion* Usuario::obtenerCancionAnterior() {
+    if (!puedeRetroceder()) {
+        cout << "No hay canciones anteriores en el historial." << endl;
+        return nullptr;
+    }
+    posicionActualHistorial--;
+    cout << "Retrocediendo a canción anterior..." << endl;
+    return historialReproduccion[posicionActualHistorial];
+}
+
+Cancion* Usuario::obtenerCancionSiguiente() {
+    if (!puedeAvanzar()) {
+        cout << "No hay más canciones en el historial." << endl;
+        return nullptr;
+    }
+    posicionActualHistorial++;
+    cout << "Avanzando a siguiente canción..." << endl;
+    return historialReproduccion[posicionActualHistorial];
+}
+
+void Usuario::agregarAlHistorial(Cancion* cancion) {
+    if (!esPremium() || historialReproduccion == nullptr) {
+        return;
+    }
+
+    // Si estamos en medio del historial, truncamos
+    if (posicionActualHistorial < cantidadEnHistorial - 1) {
+        cantidadEnHistorial = posicionActualHistorial + 1;
+    }
+
+    // Si el historial está lleno, desplazamos
+    if (cantidadEnHistorial >= MAX_HISTORIAL) {
+        for (int i = 0; i < MAX_HISTORIAL - 1; ++i) {
+            historialReproduccion[i] = historialReproduccion[i + 1];
+        }
+        cantidadEnHistorial = MAX_HISTORIAL - 1;
+    }
+
+    // Agregar nueva canción
+    historialReproduccion[cantidadEnHistorial] = cancion;
+    posicionActualHistorial = cantidadEnHistorial;
+    cantidadEnHistorial++;
+}
+
+void Usuario::limpiarHistorial() {
+    if (historialReproduccion != nullptr) {
+        for (int i = 0; i < MAX_HISTORIAL; ++i) {
+            historialReproduccion[i] = nullptr;
+        }
+    }
+    cantidadEnHistorial = 0;
+    posicionActualHistorial = -1;
+}
+
+int Usuario::getCantidadEnHistorial() const {
+    return cantidadEnHistorial;
+}
+
+// ============================================================================
+// CONTROL DE REPRODUCCIÓN
+// ============================================================================
+
+void Usuario::iniciarReproduccion(Cancion* cancion) {
+    if (cancion == nullptr) {
+        cout << "Error: Canción inválida para reproducir." << endl;
+        return;
+    }
+
+    cancionActual = cancion;
+    reproduciendo = true;
+
+    // Agregar al historial (solo premium)
+    if (esPremium()) {
+        agregarAlHistorial(cancion);
+    }
+
+    // Incrementar contador para publicidad (solo estándar)
+    if (!esPremium()) {
+        incrementarContadorPublicidad();
+    }
+
+    cout << "Reproduciendo: " << cancion->obtenerNombre() << endl;
+}
+
+void Usuario::detenerReproduccion() {
+    if (!reproduciendo) {
+        cout << "No hay reproducción en curso." << endl;
+        return;
+    }
+    cout << "Deteniendo reproducción..." << endl;
+    reproduciendo = false;
+}
+
+bool Usuario::estaReproduciendo() const {
+    return reproduciendo;
+}
+
+Cancion* Usuario::getCancionActual() const {
+    return cancionActual;
+}
+
+// ============================================================================
+// CONTROL DE PUBLICIDAD
+// ============================================================================
+
+bool Usuario::debeMostrarPublicidad() const {
+    // Usuarios estándar ven publicidad cada 2 canciones
+    return !esPremium() && (contadorCancionesReproducidas % 2 == 0) && (contadorCancionesReproducidas > 0);
+}
+
+void Usuario::incrementarContadorPublicidad() {
+    contadorCancionesReproducidas++;
+}
+
+void Usuario::reiniciarContadorPublicidad() {
+    contadorCancionesReproducidas = 0;
+}
+
+int Usuario::getContadorCancionesReproducidas() const {
+    return contadorCancionesReproducidas;
 }
