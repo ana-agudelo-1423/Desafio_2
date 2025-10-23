@@ -13,6 +13,7 @@ SOURCES += \
         catalogo.cpp \
         credito.cpp \
         main.cpp \
+        sistema.cpp \
         usuario.cpp
 
 # Default rules for deployment.
@@ -26,4 +27,5 @@ HEADERS += \
     cancion.h \
     catalogo.h \
     credito.h \
+    sistema.h \
     usuario.h

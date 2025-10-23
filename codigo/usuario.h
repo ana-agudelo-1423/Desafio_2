@@ -3,7 +3,7 @@
 
 #include <string>
 
-// Forward declarations para evitar includes circulares
+// Forward declarations
 class Cancion;
 
 class Usuario {
@@ -23,11 +23,19 @@ private:
     Usuario* usuarioSeguido;
 
     void aumentarCapacidadFavoritos();
+    bool validarFecha(int fecha) const;
 
 public:
+    // Constructores
     Usuario(const std::string& nickname, const std::string& tipoMembresia,
             const std::string& ciudad, const std::string& pais, int fechaInscripcion);
+    Usuario(const Usuario& otro); // Constructor de copia
     ~Usuario();
+
+    // Operadores de sobrecarga (requeridos - mínimo 2)
+    Usuario& operator=(const Usuario& otro);
+    bool operator==(const Usuario& otro) const;
+    bool operator!=(const Usuario& otro) const;
 
     // Getters
     const std::string& getNickname() const;
@@ -41,17 +49,24 @@ public:
     bool agregarFavorito(Cancion* cancion);
     bool eliminarFavorito(int idCancion);
     bool tieneFavorito(int idCancion) const;
+    bool tieneFavorito(Cancion* cancion) const;
     int getCantidadFavoritos() const;
     Cancion* getFavoritoEn(int indice) const;
     void limpiarFavoritos();
+    bool estaLlenaListaFavoritos() const;
 
     // Seguir usuario
-    void seguirUsuario(Usuario* usuario);
+    bool seguirUsuario(Usuario* usuario);
     Usuario* getUsuarioSeguido() const;
     void dejarDeSeguir();
+    bool estaSiguiendoA(const std::string& nickname) const;
 
     // Combinar listas (para funcionalidad de seguir)
-    void combinarConListaDe(Usuario* otroUsuario);
+    bool combinarConListaDe(Usuario* otroUsuario);
+
+    // Utilidades
+    void mostrarInformacion() const;
+    std::string obtenerInfoResumida() const;
 };
 
 #endif
