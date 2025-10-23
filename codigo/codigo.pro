@@ -10,6 +10,7 @@ SOURCES += \
         album.cpp \
         artista.cpp \
         cancion.cpp \
+        cargar_catalogo.cpp \
         catalogo.cpp \
         credito.cpp \
         main.cpp
@@ -23,5 +24,6 @@ HEADERS += \
     album.h \
     artista.h \
     cancion.h \
+    cargar_catalogo.h \
     catalogo.h \
     credito.h

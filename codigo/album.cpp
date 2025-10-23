@@ -22,7 +22,21 @@ Album::Album(
 
 Album::~Album()
 {
+    for (int i = 0; i < cantidadCanciones; ++i)
+    {
+        if (canciones[i] != nullptr)
+        {
+            delete canciones[i];
+            canciones[i] = nullptr;
+        }
+    }
+
     delete[] canciones;
+    canciones = nullptr;
+
+    cantidadCanciones = 0;
+    capacidadCanciones = 0;
+    duracionTotal = 0.0f;
 }
 
 void Album::aumentarCapacidadCanciones()

@@ -16,7 +16,20 @@ Artista::Artista(int id, int edad, const string& nombre, const string& paisOrige
 
 Artista::~Artista()
 {
+    for (int i = 0; i < cantidadAlbums; ++i)
+    {
+        if (albums[i] != nullptr)
+        {
+            delete albums[i];
+            albums[i] = nullptr;
+        }
+    }
+
     delete[] albums;
+    albums = nullptr;
+
+    cantidadAlbums = 0;
+    capacidadAlbums = 0;
 }
 
 void Artista::aumentarCapacidadAlbums()

@@ -1,0 +1,21 @@
+id;idArtista;nombre;fechaYYYYMMDD;sello;portada
+101;1;Laundry Service;20011113;Sony Music;C:/img/shakira_laundry.png
+102;2;11:11;20190517;Sony Music;C:/img/maluma_1111.png
+103;3;Manana Sera Bonito;20230224;Universal Music;C:/img/karolg_bonito.png
+104;4;Colores;20200319;Universal Music;C:/img/jbalvin_colores.png
+105;5;Un Verano Sin Ti;20220506;Rimas;C:/img/badbunny_verano.png
+106;6;Saturno;20221111;Sony Music;C:/img/rauw_saturno.png
+107;7;Un Dia Normal;20020521;Universal Music;C:/img/juanes_normal.png
+108;8;Dharma;20220128;Universal Music;C:/img/yatra_dharma.png
+109;9;Por Primera Vez;20200417;Sony Music;C:/img/camilo_primera.png
+110;10;Cumbiana;20200522;Sony Music;C:/img/vives_cumbiana.png
+111;11;MOR No Le Temas a la Oscuridad;20230929;Universal;C:/img/feid_mor.png
+112;12;Ilusion;20111129;Sony Music;C:/img/fonseca_ilusion.png
+113;13;2000;20230511;Sony Music;C:/img/turizo_2000.png
+114;14;Balas Perdidas;20181026;Universal;C:/img/morat_balas.png
+115;15;Motomami;20220318;Columbia Records;C:/img/rosalia_motomami.png
+116;16;Nibiru;20191129;Sony Music;C:/img/ozuna_nibiru.png
+117;17;Legendaddy;20220324;Universal;C:/img/dy_legendaddy.png
+118;18;Infinity;20210827;Sony Music;C:/img/nicky_infinity.png
+119;19;Versions of Me;20220412;Warner;C:/img/anitta_versions.png
+120;20;A Medio Vivir;19950912;Sony Music;C:/img/ricky_medio.png

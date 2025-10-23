@@ -1,0 +1,21 @@
+id;edad;nombre;pais
+1;47;Shakira;Colombia
+2;30;Maluma;Colombia
+3;33;Karol G;Colombia
+4;39;J Balvin;Colombia
+5;30;Bad Bunny;Puerto Rico
+6;31;Rauw Alejandro;Puerto Rico
+7;49;Juanes;Colombia
+8;36;Sebastian Yatra;Colombia
+9;32;Camilo;Colombia
+10;45;Carlos Vives;Colombia
+11;32;Feid;Colombia
+12;41;Fonseca;Colombia
+13;27;Manuel Turizo;Colombia
+14;31;Morat;Colombia
+15;34;Rosalia;Espana
+16;29;Ozuna;Puerto Rico
+17;38;Daddy Yankee;Puerto Rico
+18;42;Nicky Jam;Puerto Rico
+19;32;Anitta;Brasil
+20;48;Ricky Martin;Puerto Rico

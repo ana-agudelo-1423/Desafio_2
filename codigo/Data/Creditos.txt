@@ -1,0 +1,21 @@
+id;nombre;rol
+1;Ovy On The Drums;Productor
+2;Tainy;Productor
+3;Sky Rompiendo;Productor
+4;Andres Saavedra;Compositor
+5;Keityn;Compositor
+6;Feid;Compositor
+7;Mauricio Rengifo;Productor
+8;Andres Torres;Productor
+9;El Guincho;Productor
+10;Tiny;Ingeniero de sonido
+11;Mosty;Mezcla
+12;Colombian Gang Beats;Arreglista
+13;DJ Luian;Beatmaker
+14;Chris Jeday;Beatmaker
+15;Cesar Lopez;Guitarrista
+16;Danna Paola;Coros
+17;Sebastian Obando;Voz adicional
+18;Rafael Arcaute;Ingeniero
+19;Mambo Kingz;Productor
+20;Fabian Rendon;Letrista

@@ -10,7 +10,6 @@ Catalogo::Catalogo()
 
 Catalogo::~Catalogo()
 {
-    // No se eliminan los Artista* (NO somos dueños)
     delete[] listaArtistas;
 }
 
@@ -133,6 +132,52 @@ Album* Catalogo::buscarAlbumPorCancionId(int idCancion) const
                     {
                         return albumActual;
                     }
+                }
+            }
+        }
+    }
+
+    return nullptr;
+}
+
+Artista* Catalogo::buscarArtistaPorId(int idArtista) const
+{
+    for (int i = 0; i < cantidadArtistas; ++i)
+    {
+        Artista* artistaActual = listaArtistas[i];
+
+        if (artistaActual != nullptr)
+        {
+            if (artistaActual->obtenerId() == idArtista)
+            {
+                return artistaActual;
+            }
+        }
+    }
+
+    return nullptr;
+}
+
+Album* Catalogo::buscarAlbumPorId(int idAlbum) const
+{
+    for (int i = 0; i < cantidadArtistas; ++i)
+    {
+        Artista* artistaActual = listaArtistas[i];
+
+        if (artistaActual == nullptr)
+        {
+            continue;
+        }
+
+        for (int j = 0; j < artistaActual->obtenerCantidadAlbums(); ++j)
+        {
+            Album* albumActual = artistaActual->obtenerAlbumEn(j);
+
+            if (albumActual != nullptr)
+            {
+                if (albumActual->obtenerId() == idAlbum)
+                {
+                    return albumActual;
                 }
             }
         }
