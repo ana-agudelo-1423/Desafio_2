@@ -2,13 +2,15 @@
 #define MENSAJE_PUBLICITARIO_H
 
 #include <string>
+#include <iostream>
 
 class MensajePublicitario {
 private:
     int id;
     std::string mensaje;
-    std::string categoria; // "C", "B" o "AAA"
-    int prioridad; // Calculada: C=1, B=2, AAA=3
+    std::string categoria;
+    int prioridad;
+    int vecesMostrado;  // Asegurar que esta línea existe
 
 public:
     MensajePublicitario(int id, const std::string& mensaje, const std::string& categoria);
@@ -18,12 +20,11 @@ public:
     const std::string& getMensaje() const;
     const std::string& getCategoria() const;
     int getPrioridad() const;
+    int getVecesMostrado() const;  // Asegurar que esta declaración existe
 
-    // Validación
     bool esCategoriaValida() const;
-
-    // Utilidades
-    void mostrarMensaje() const;
+    void mostrarMensaje();  // Sin const porque modifica vecesMostrado
+    void incrementarContador();  // Esta declaración debe existir
 };
 
 #endif

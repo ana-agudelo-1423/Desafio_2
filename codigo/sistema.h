@@ -3,10 +3,15 @@
 
 #include "catalogo.h"
 #include "usuario.h"
-#include <string>
-
-// Forward declaration
-class MensajePublicitario;
+#include "mensaje_publicitario.h"
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <fstream>
+#include <sstream>
+#include <thread>
+#include <chrono>
+using namespace std;
 
 class Sistema {
 private:
@@ -19,48 +24,39 @@ private:
     int cantidadMensajes;
     int capacidadMensajes;
 
-    Usuario* usuarioActual;
-
-    // Métodos auxiliares
     void aumentarCapacidadUsuarios();
     void aumentarCapacidadMensajes();
-    void cargarDatos();
-    void guardarDatos();
+    void cargarUsuariosDesdeArchivo();
+    void cargarMensajesDesdeArchivo();
+    void guardarUsuariosEnArchivo();
+    void guardarMensajesEnArchivo();
+    void cargarArtistasDesdeArchivo();
+    void cargarAlbumesDesdeArchivo();
+    void cargarCancionesDesdeArchivo();
+    void cargarCreditosDesdeArchivo();
+    void cargarAlbumesEjemplo();
 
 public:
     Sistema();
     ~Sistema();
 
-    // Gestión de usuarios
-    bool iniciarSesion(const std::string& nickname);
-    void cerrarSesion();
-    bool registrarUsuario(const std::string& nickname, const std::string& tipoMembresia,
-                          const std::string& ciudad, const std::string& pais, int fechaInscripcion);
-    Usuario* buscarUsuario(const std::string& nickname) const;
-    Usuario* getUsuarioActual() const;
-    int getCantidadUsuarios() const;
+    void cargarDatos();
+    void guardarDatos();
+    void cargarCatalogo();
 
-    // Gestión de mensajes publicitarios
+    void agregarUsuario(Usuario* usuario);
+    Usuario* buscarUsuario(const string& nick) const;
     void agregarMensajePublicitario(MensajePublicitario* mensaje);
     MensajePublicitario* obtenerMensajeAleatorio() const;
-    int getCantidadMensajes() const;
+    void mostrarEstadisticasMensajes() const;
 
-    // Funcionalidades principales DEL MENÚ
-    void reproduccionAleatoria();                    // Funcionalidad III
-    void gestionarFavoritos();                       // Funcionalidad IV-a
-    void seguirListaFavoritos(const std::string& nickname); // Funcionalidad IV-b
-    void ejecutarListaFavoritos();                   // Funcionalidad IV-c
-
-    // Métricas (Funcionalidad V)
-    void mostrarMetricas(int iteraciones) const;
-    size_t calcularMemoriaTotal() const;
-
-    // Búsquedas auxiliares
+    void reproduccionAleatoria(Usuario* usuarioActual);
     Cancion* buscarCancionPorId(int id) const;
     Album* buscarAlbumPorCancionId(int id) const;
     Artista* buscarArtistaPorCancionId(int id) const;
 
-    // Acceso al catálogo
+    void mostrarMetricas(int iteraciones) const;
+    size_t calcularMemoriaTotal() const;
     Catalogo* getCatalogo() const;
 };
 
