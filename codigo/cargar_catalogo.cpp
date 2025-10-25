@@ -81,26 +81,6 @@ Artista* CargarCatalogo::buscarArtistaPorId(Catalogo* catalogo, int idArtista)
     return catalogo->buscarArtistaPorId(idArtista);
 }
 
-Album* CargarCatalogo::buscarAlbumPorId(Artista* artista, int idAlbum)
-{
-    if (artista == nullptr)
-    {
-        return nullptr;
-    }
-
-    for (int i = 0; i < artista->obtenerCantidadAlbums(); ++i)
-    {
-        Album* album = artista->obtenerAlbumEn(i);
-
-        if (album != nullptr && album->obtenerId() == idAlbum)
-        {
-            return album;
-        }
-    }
-
-    return nullptr;
-}
-
 Album* CargarCatalogo::buscarAlbumGlobalPorId(Catalogo* catalogo, int idAlbum)
 {
     return catalogo->buscarAlbumPorId(idAlbum);
@@ -148,13 +128,19 @@ bool CargarCatalogo::cargarTodo(
         char* campoEdad = obtenerCampo(cursor);
         char* campoNombre = obtenerCampo(cursor);
         char* campoPais = obtenerCampo(cursor);
+        char* campoSeguidores = obtenerCampo(cursor);
+        char* campoPosicion = obtenerCampo(cursor);
 
         int id = convertirEntero(campoId);
         int edad = convertirEntero(campoEdad);
+        int seguidores = convertirEntero(campoSeguidores);
+        int posicion = convertirEntero(campoPosicion);
         string nombre = (campoNombre ? campoNombre : "");
         string pais = (campoPais ? campoPais : "");
 
         Artista* nuevoArtista = new Artista(id, edad, nombre, pais);
+        nuevoArtista->setSeguidores(seguidores);
+        nuevoArtista->setPosicion(posicion);
         catalogo->agregarArtista(nuevoArtista);
     }
 
@@ -175,18 +161,28 @@ bool CargarCatalogo::cargarTodo(
         char* campoFecha = obtenerCampo(cursor);
         char* campoSello = obtenerCampo(cursor);
         char* campoPortada = obtenerCampo(cursor);
+        char* campoPuntuacion = obtenerCampo(cursor);
+        char* campoGenero1 = obtenerCampo(cursor);
+        char* campoGenero2 = obtenerCampo(cursor);
+        char* campoGenero3 = obtenerCampo(cursor);
+        char* campoGenero4 = obtenerCampo(cursor);
 
         int idAlbum = convertirEntero(campoId);
         int idArtista = convertirEntero(campoIdArtista);
         int fecha = convertirEntero(campoFecha);
+        int puntuacion = convertirEntero(campoPuntuacion);
         string nombre = (campoNombre ? campoNombre : "");
         string sello = (campoSello ? campoSello : "");
         string portada = (campoPortada ? campoPortada : "");
+        string genero1 = (campoGenero1 ? campoGenero1 : "");
+        string genero2 = (campoGenero2 ? campoGenero2 : "");
+        string genero3 = (campoGenero3 ? campoGenero3 : "");
+        string genero4 = (campoGenero4 ? campoGenero4 : "");
 
         Artista* artista = buscarArtistaPorId(catalogo, idArtista);
         if (artista != nullptr)
         {
-            Album* nuevoAlbum = new Album(idAlbum, nombre, fecha, sello, portada);
+            Album* nuevoAlbum = new Album(idAlbum, nombre, fecha, sello, portada, puntuacion, genero1, genero2, genero3, genero4);
             artista->agregarAlbum(nuevoAlbum);
         }
     }
@@ -259,13 +255,17 @@ bool CargarCatalogo::cargarTodo(
         char* cursor = linea;
         char* campoId = obtenerCampo(cursor);
         char* campoNombre = obtenerCampo(cursor);
-        char* campoRol = obtenerCampo(cursor);
+        char* campoApellido = obtenerCampo(cursor);
+        char* campoCategoria = obtenerCampo(cursor);
+        char* campoAfiliacion = obtenerCampo(cursor);
 
         int id = convertirEntero(campoId);
         string nombre = (campoNombre ? campoNombre : "");
-        string rol = (campoRol ? campoRol : "");
+        string apellido = (campoApellido ? campoApellido : "");
+        string categoria = (campoCategoria ? campoCategoria : "");
+        string afiliacion = (campoAfiliacion ? campoAfiliacion : "");
 
-        listaCreditos[cantidadCreditos] = new Credito(id, nombre, rol);
+        listaCreditos[cantidadCreditos] = new Credito(id, nombre, apellido, categoria, afiliacion);
         cantidadCreditos = cantidadCreditos + 1;
     }
 

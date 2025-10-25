@@ -1,19 +1,22 @@
 #include "album.h"
 using namespace std;
 
-Album::Album(
-    int id,
-    const string& nombre,
-    int fechaAAAAMMDD,
-    const string& selloDisquero,
-    const string& rutaPortada
-    )
+Album::Album(int id, const std::string& nombre, int fechaAAAAMMDD,
+             const std::string& selloDisquero, const std::string& rutaPortada,
+             int puntuacion, const std::string& genero1,
+             const std::string& genero2, const std::string& genero3, const std::string& genero4)
+
     : id(id),
     nombre(nombre),
     fechaAAAAMMDD(fechaAAAAMMDD),
     selloDisquero(selloDisquero),
     rutaPortada(rutaPortada),
     duracionTotal(0.0f),
+    puntuacion(puntuacion),
+    genero1(genero1),
+    genero2(genero2),
+    genero3(genero3),
+    genero4(genero4),
     canciones(nullptr),
     cantidadCanciones(0),
     capacidadCanciones(0)
@@ -125,4 +128,29 @@ const string& Album::obtenerPortada() const
 int Album::obtenerId() const
 {
     return id;
+}
+
+int Album::obtenerPuntuacion() const
+{
+    return puntuacion;
+}
+
+const std::string& Album::obtenerGenero1() const
+{
+    return genero1;
+}
+
+const std::string& Album::obtenerGenero2() const
+{
+    return genero2;
+}
+
+const std::string& Album::obtenerGenero3() const
+{
+    return genero3;
+}
+
+const std::string& Album::obtenerGenero4() const
+{
+    return genero4;
 }

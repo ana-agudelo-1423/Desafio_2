@@ -1,8 +1,13 @@
 #include "credito.h"
 using namespace std;
 
-Credito::Credito(int id, const string& nombre, const string& rol)
-    : id(id), nombre(nombre), rol(rol)
+Credito::Credito(int id, const std::string& nombre, const std::string& apellido,
+                 const std::string& categoria, const std::string& afiliacion)
+    : id(id),
+    nombre(nombre),
+    apellido(apellido),
+    categoria(categoria),
+    afiliacion(afiliacion)
 {
 }
 
@@ -20,7 +25,17 @@ const string& Credito::getNombre() const
     return nombre;
 }
 
-const string& Credito::getRol() const
+const std::string& Credito::getApellido() const
 {
-    return rol;
+    return apellido;
+}
+
+const std::string& Credito::getCategoria() const
+{
+    return categoria;
+}
+
+const std::string& Credito::getAfiliacion() const
+{
+    return afiliacion;
 }

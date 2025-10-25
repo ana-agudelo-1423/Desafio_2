@@ -1,21 +1,21 @@
-id;edad;nombre;pais
-1;47;Shakira;Colombia
-2;30;Maluma;Colombia
-3;33;Karol G;Colombia
-4;39;J Balvin;Colombia
-5;30;Bad Bunny;Puerto Rico
-6;31;Rauw Alejandro;Puerto Rico
-7;49;Juanes;Colombia
-8;36;Sebastian Yatra;Colombia
-9;32;Camilo;Colombia
-10;45;Carlos Vives;Colombia
-11;32;Feid;Colombia
-12;41;Fonseca;Colombia
-13;27;Manuel Turizo;Colombia
-14;31;Morat;Colombia
-15;34;Rosalia;Espana
-16;29;Ozuna;Puerto Rico
-17;38;Daddy Yankee;Puerto Rico
-18;42;Nicky Jam;Puerto Rico
-19;32;Anitta;Brasil
-20;48;Ricky Martin;Puerto Rico
+id;edad;nombre;pais;seguidores;posicion
+1;47;Shakira;Colombia;58000000;3
+2;31;Maluma;Colombia;27000000;12
+3;33;Karol G;Colombia;39000000;5
+4;39;J Balvin;Colombia;35000000;6
+5;31;Bad Bunny;Puerto Rico;72000000;1
+6;31;Rauw Alejandro;Puerto Rico;18000000;14
+7;51;Juanes;Colombia;9000000;25
+8;29;Sebastian Yatra;Colombia;16000000;18
+9;30;Camilo;Colombia;15000000;20
+10;62;Carlos Vives;Colombia;8000000;28
+11;32;Feid;Colombia;21000000;11
+12;45;Fonseca;Colombia;4000000;40
+13;24;Manuel Turizo;Colombia;13000000;22
+14;30;Morat;Colombia;12000000;23
+15;32;Rosalia;Espana;26000000;9
+16;33;Ozuna;Puerto Rico;24000000;10
+17;48;Daddy Yankee;Puerto Rico;29000000;8
+18;43;Nicky Jam;Puerto Rico;21000000;13
+19;31;Anitta;Brasil;22000000;15
+20;53;Ricky Martin;Puerto Rico;20000000;16

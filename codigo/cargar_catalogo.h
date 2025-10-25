@@ -19,7 +19,6 @@ private:
     static float convertirFlotante(const char* texto);
 
     static Artista* buscarArtistaPorId(Catalogo* catalogo, int idArtista);
-    static Album* buscarAlbumPorId(Artista* artista, int idAlbum);
     static Album* buscarAlbumGlobalPorId(Catalogo* catalogo, int idAlbum);
     static Cancion* buscarCancionGlobalPorId(Catalogo* catalogo, int idCancion);
     static Credito* buscarCreditoPorId(Credito** lista, int cantidad, int idCredito);

@@ -34,12 +34,9 @@ public:
     int  obtenerCantidadCreditos() const;
     Credito* obtenerCreditoEn(int indice) const;
 
-    // Reproducción
-    void aumentarReproducciones();
+    void        reproducir(bool altaCalidad);
+    void        reproducir(bool altaCalidad, const std::string& rutaPortadaAlbum);
     int  obtenerReproducciones() const;
-
-    // Rutas
-    const std::string& obtenerRuta(bool altaCalidad) const;
 
     // Getters
     int obtenerId() const;

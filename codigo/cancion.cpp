@@ -1,4 +1,5 @@
 #include "cancion.h"
+#include <iostream>
 using namespace std;
 
 Cancion::Cancion(
@@ -23,6 +24,9 @@ Cancion::Cancion(
 Cancion::~Cancion()
 {
     delete[] creditos;
+    creditos = nullptr;
+    cantidadCreditos = 0;
+    capacidadCreditos = 0;
 }
 
 void Cancion::aumentarCapacidadCreditos()
@@ -76,26 +80,28 @@ Credito* Cancion::obtenerCreditoEn(int indice) const
     return creditos[indice];
 }
 
-void Cancion::aumentarReproducciones()
-{
-    reproducciones = reproducciones + 1;
-}
-
-int Cancion::obtenerReproducciones() const
-{
-    return reproducciones;
-}
-
-const string& Cancion::obtenerRuta(bool altaCalidad) const
+void Cancion::reproducir(bool altaCalidad)
 {
     if (altaCalidad)
     {
-        return ruta320;
+        cout << "Audio: " << ruta320 << endl;
     }
     else
     {
-        return ruta128;
+        cout << "Audio: " << ruta128 << endl;
     }
+
+    reproducciones = reproducciones + 1;
+}
+
+void Cancion::reproducir(bool altaCalidad, const std::string& rutaPortadaAlbum)
+{
+    cout << "Portada: " << rutaPortadaAlbum << endl;
+    reproducir(altaCalidad);
+}
+int Cancion::obtenerReproducciones() const
+{
+    return reproducciones;
 }
 
 int Cancion::obtenerId() const

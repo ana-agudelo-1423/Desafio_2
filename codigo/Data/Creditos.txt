@@ -1,21 +1,16 @@
-id;nombre;rol
-1;Ovy On The Drums;Productor
-2;Tainy;Productor
-3;Sky Rompiendo;Productor
-4;Andres Saavedra;Compositor
-5;Keityn;Compositor
-6;Feid;Compositor
-7;Mauricio Rengifo;Productor
-8;Andres Torres;Productor
-9;El Guincho;Productor
-10;Tiny;Ingeniero de sonido
-11;Mosty;Mezcla
-12;Colombian Gang Beats;Arreglista
-13;DJ Luian;Beatmaker
-14;Chris Jeday;Beatmaker
-15;Cesar Lopez;Guitarrista
-16;Danna Paola;Coros
-17;Sebastian Obando;Voz adicional
-18;Rafael Arcaute;Ingeniero
-19;Mambo Kingz;Productor
-20;Fabian Rendon;Letrista
+id;nombre;apellido;categoria;afiliacion
+1;Sky;Rompiendo;Productor;SKY9PROD1A
+2;Kevyn;Cruz;Compositor;KEI7COMP3B
+3;Tainy;Gonzalez;Productor;TAI9PROD2C
+4;DJ;Luian;Musico;DJL8MUSI4D
+5;El;Guincho;Productor;EGU7PROD5E
+6;Ovy;OnTheDrums;Productor;OVY6PROD6F
+7;Feid;Gomez;Compositor;FEI5COMP7G
+8;Andres;Torres;Productor;ATO4PROD8H
+9;Mauricio;Rengifo;Productor;MRE3PROD9I
+10;Cesar;Lopez;Musico;CLO2MUSI0J
+11;Andres;Saavedra;Compositor;ASA1COMP1K
+12;Pedro;Capo;Compositor;PCO0COMP2L
+13;Bad;Bunny;Compositor;BBN9COMP3M
+14;Rosalia;Vila;Compositor;ROS8COMP4N
+15;Anthony;Kiedis;Compositor;AKI7COMP5P

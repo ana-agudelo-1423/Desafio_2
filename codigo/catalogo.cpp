@@ -10,7 +10,19 @@ Catalogo::Catalogo()
 
 Catalogo::~Catalogo()
 {
+    for (int i = 0; i < cantidadArtistas; ++i)
+    {
+        if (listaArtistas[i] != nullptr)
+        {
+            delete listaArtistas[i];
+            listaArtistas[i] = nullptr;
+        }
+    }
+
     delete[] listaArtistas;
+    listaArtistas = nullptr;
+    cantidadArtistas = 0;
+    capacidadArtistas = 0;
 }
 
 void Catalogo::aumentarCapacidadArtistas()
