@@ -1,0 +1,26 @@
+id9digitos;idAlbum;duracion;nombre;ruta128;ruta320
+000010101;101;235;Whenever Wherever;/users/storage/shakira/audio/whenever\ wherever_128.ogg;/users/storage/shakira/audio/whenever\ wherever_320.ogg
+000010102;101;220;Underneath Your Clothes;/users/storage/shakira/audio/underneath\ your\ clothes_128.ogg;/users/storage/shakira/audio/underneath\ your\ clothes_320.ogg
+000020101;201;205;HP;/users/storage/maluma/audio/hp_128.ogg;/users/storage/maluma/audio/hp_320.ogg
+000020102;201;210;11 PM;/users/storage/maluma/audio/11\ pm_128.ogg;/users/storage/maluma/audio/11\ pm_320.ogg
+000030101;301;215;Provenza;/users/storage/karol\ g/audio/provenza_128.ogg;/users/storage/karol\ g/audio/provenza_320.ogg
+000030102;301;230;TQG;/users/storage/karol\ g/audio/tqg_128.ogg;/users/storage/karol\ g/audio/tqg_320.ogg
+000040101;401;190;Amarillo;/users/storage/j\ balvin/audio/amarillo_128.ogg;/users/storage/j\ balvin/audio/amarillo_320.ogg
+000040102;401;185;Azul;/users/storage/j\ balvin/audio/azul_128.ogg;/users/storage/j\ balvin/audio/azul_320.ogg
+000050101;501;250;Titi Me Pregunto;/users/storage/bad\ bunny/audio/titi\ me\ pregunto_128.ogg;/users/storage/bad\ bunny/audio/titi\ me\ pregunto_320.ogg
+000050102;501;245;Me Porto Bonito;/users/storage/bad\ bunny/audio/me\ porto\ bonito_128.ogg;/users/storage/bad\ bunny/audio/me\ porto\ bonito_320.ogg
+000060101;601;230;De Carolina;/users/storage/rauw\ alejandro/audio/de\ carolina_128.ogg;/users/storage/rauw\ alejandro/audio/de\ carolina_320.ogg
+000070101;701;220;A Dios Le Pido;/users/storage/juanes/audio/a\ dios\ le\ pido_128.ogg;/users/storage/juanes/audio/a\ dios\ le\ pido_320.ogg
+000080101;801;210;Tacones Rojos;/users/storage/sebastian\ yatra/audio/tacones\ rojos_128.ogg;/users/storage/sebastian\ yatra/audio/tacones\ rojos_320.ogg
+000090101;901;205;Tutu;/users/storage/camilo/audio/tutu_128.ogg;/users/storage/camilo/audio/tutu_320.ogg
+000100101;1001;215;For Sale;/users/storage/carlos\ vives/audio/for\ sale_128.ogg;/users/storage/carlos\ vives/audio/for\ sale_320.ogg
+000110101;1101;200;Nina Bonita;/users/storage/feid/audio/nina\ bonita_128.ogg;/users/storage/feid/audio/nina\ bonita_320.ogg
+000120101;1201;230;Eres Mi Sueno;/users/storage/fonseca/audio/eres\ mi\ sueno_128.ogg;/users/storage/fonseca/audio/eres\ mi\ sueno_320.ogg
+000130101;1301;210;La Bachata;/users/storage/manuel\ turizo/audio/la\ bachata_128.ogg;/users/storage/manuel\ turizo/audio/la\ bachata_320.ogg
+000140101;1401;210;Besos En Guerra;/users/storage/morat/audio/besos\ en\ guerra_128.ogg;/users/storage/morat/audio/besos\ en\ guerra_320.ogg
+000150101;1501;190;Saoko;/users/storage/rosalia/audio/saoko_128.ogg;/users/storage/rosalia/audio/saoko_320.ogg
+000160101;1601;215;Amor Genuino;/users/storage/ozuna/audio/amor\ genuino_128.ogg;/users/storage/ozuna/audio/amor\ genuino_320.ogg
+000170101;1701;205;Remix;/users/storage/daddy\ yankee/audio/remix_128.ogg;/users/storage/daddy\ yankee/audio/remix_320.ogg
+000180101;1801;200;Magnum;/users/storage/nicky\ jam/audio/magnum_128.ogg;/users/storage/nicky\ jam/audio/magnum_320.ogg
+000190101;1901;195;Envolver;/users/storage/anitta/audio/envolver_128.ogg;/users/storage/anitta/audio/envolver_320.ogg
+000200101;2001;245;Maria;/users/storage/ricky\ martin/audio/maria_128.ogg;/users/storage/ricky\ martin/audio/maria_320.ogg
