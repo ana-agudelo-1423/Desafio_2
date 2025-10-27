@@ -15,10 +15,10 @@ SOURCES += \
         credito.cpp \
         main.cpp \
         plan_estandar.cpp \
-        plan_premium.cpp
+        plan_premium.cpp \
         mensaje_publicitario.cpp \
         sistema.cpp \
-        usuario.cpp
+        usuario.cpp 
 
 
 # Default rules for deployment.
@@ -34,7 +34,7 @@ HEADERS += \
     catalogo.h \
     credito.h \
     plan_estandar.h \
-    plan_premium.h
+    plan_premium.h \
     mensaje_publicitario.h \
     sistema.h \
     usuario.h
