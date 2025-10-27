@@ -13,7 +13,9 @@ SOURCES += \
         cargar_catalogo.cpp \
         catalogo.cpp \
         credito.cpp \
-        main.cpp
+        main.cpp \
+        plan_estandar.cpp \
+        plan_premium.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -26,4 +28,6 @@ HEADERS += \
     cancion.h \
     cargar_catalogo.h \
     catalogo.h \
-    credito.h
+    credito.h \
+    plan_estandar.h \
+    plan_premium.h

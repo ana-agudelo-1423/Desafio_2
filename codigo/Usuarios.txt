@@ -1,0 +1,3 @@
+Marcelo;plan premium;Turbo;Colombia;20250101;
+Juan;02;plan premium;Medellin;Colombia;20250101
+Keiner;02;plan premium;Turbo;Colombia;20250101
