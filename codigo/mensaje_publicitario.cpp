@@ -3,9 +3,8 @@
 using namespace std;
 
 MensajePublicitario::MensajePublicitario(int id, const std::string& mensaje, const std::string& categoria)
-    : id(id), mensaje(mensaje), categoria(categoria), vecesMostrado(0)  // Inicializar vecesMostrado
+    : id(id), mensaje(mensaje), categoria(categoria), vecesMostrado(0)
 {
-    // Validar y asignar prioridad según categoría
     if (categoria == "AAA") {
         prioridad = 3;
     } else if (categoria == "B") {
@@ -24,8 +23,6 @@ MensajePublicitario::MensajePublicitario(int id, const std::string& mensaje, con
         cout << "Advertencia: Mensaje ID " << id << " truncado a 500 caracteres." << endl;
     }
 }
-
-// Getters - VERIFICAR que no estén duplicados en el archivo
 int MensajePublicitario::getId() const
 {
     return id;
@@ -60,25 +57,20 @@ void MensajePublicitario::incrementarContador() {
     vecesMostrado++;
 }
 
-void MensajePublicitario::mostrarMensaje() {
-    incrementarContador();
+void MensajePublicitario::mostrarMensaje() const
+{
+    cout << "\n+----------------------------------------+" << endl;
+    cout << "|        MENSAJE PUBLICITARIO            |" << endl;
 
-    cout << "\n==========================================" << endl;
-    cout << "           MENSAJE PUBLICITARIO         " << endl;
-    cout << "  Categoría: " << categoria;
+    cout << "|  Categoria: " << categoria;
+    int espacios = 26 - (int)categoria.length();
+    if (espacios < 0) espacios = 0;
+    for (int s = 0; s < espacios; ++s) cout << ' ';
+    cout << "|" << endl;
 
-    int espacios = 25 - categoria.length();
-    for (int s = 0; s < espacios; s++) cout << " ";
-    cout << "" << endl;
-
-    cout << "  Prioridad: " << prioridad;
-    espacios = 26 - to_string(prioridad).length();
-    for (int s = 0; s < espacios; s++) cout << " ";
-    cout << "" << endl;
-
-    cout << "==========================================" << endl;
+    cout << "+----------------------------------------+" << endl;
     cout << mensaje << endl;
-    cout << "==========================================" << endl;
-    cout << "         FIN MENSAJE PUBLICITARIO       " << endl;
-    cout << "==========================================" << endl;
+    cout << "+----------------------------------------+" << endl;
+    cout << "|      FIN MENSAJE PUBLICITARIO          |" << endl;
+    cout << "+----------------------------------------+" << endl;
 }

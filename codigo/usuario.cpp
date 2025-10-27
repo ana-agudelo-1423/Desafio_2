@@ -1,7 +1,7 @@
 #include "usuario.h"
 #include "cancion.h"
 #include <iostream>
-using namespace std;
+    using namespace std;
 
 Usuario::Usuario(const std::string& nickname, const std::string& tipoMembresia,
                  const std::string& ciudad, const std::string& pais, int fechaInscripcion)
@@ -13,7 +13,6 @@ Usuario::Usuario(const std::string& nickname, const std::string& tipoMembresia,
     favoritos(nullptr),
     cantidadFavoritos(0),
     capacidadFavoritos(0),
-    // ⬇️⬇️⬇️ AGREGAR ESTAS LINEAS NUEVAS ⬇️⬇️⬇️
     historialReproduccion(nullptr),
     cantidadEnHistorial(0),
     posicionActualHistorial(-1),
@@ -21,30 +20,23 @@ Usuario::Usuario(const std::string& nickname, const std::string& tipoMembresia,
     reproduciendo(false),
     contadorCancionesReproducidas(0),
     usuarioSeguido(nullptr)
-// ⬆️⬆️⬆️ FIN DE AGREGADOS ⬆️⬆️⬆️
 {
-    // ⬇️⬇️⬇️ AGREGAR ESTO DENTRO DEL CONSTRUCTOR ⬇️⬇️⬇️
-    // Inicializar historial de reproducción (solo para premium)
     if (esPremium()) {
         historialReproduccion = new Cancion*[MAX_HISTORIAL];
         for (int i = 0; i < MAX_HISTORIAL; ++i) {
             historialReproduccion[i] = nullptr;
         }
     }
-    // ⬆️⬆️⬆️ FIN DE AGREGADOS ⬆️⬆️⬆️
 
-    // Validar tipo de membresía
     if (tipoMembresia != "estandar" && tipoMembresia != "premium") {
         this->tipoMembresia = "estandar";
     }
 
-    // Validar fecha
     if (!validarFecha(fechaInscripcion)) {
         this->fechaInscripcion = 20240101;
     }
 }
 
-// CONSTRUCTOR DE COPIA (requerido por el enunciado)
 Usuario::Usuario(const Usuario& otro)
     : nickname(otro.nickname),
     tipoMembresia(otro.tipoMembresia),
@@ -54,9 +46,8 @@ Usuario::Usuario(const Usuario& otro)
     favoritos(nullptr),
     cantidadFavoritos(0),
     capacidadFavoritos(0),
-    usuarioSeguido(nullptr) // No copiamos el usuario seguido (es referencia)
+    usuarioSeguido(nullptr)
 {
-    // Copiar lista de favoritos
     for (int i = 0; i < otro.cantidadFavoritos; ++i) {
         agregarFavorito(otro.favoritos[i]);
     }
@@ -64,29 +55,24 @@ Usuario::Usuario(const Usuario& otro)
 
 Usuario::~Usuario()
 {
-    // No eliminamos las canciones (NO somos dueños)
     delete[] favoritos;
     if (historialReproduccion != nullptr) {
         delete[] historialReproduccion;
-         }
+    }
 }
 
-// OPERADOR DE ASIGNACIÓN (sobrecarga requerida)
 Usuario& Usuario::operator=(const Usuario& otro)
 {
-    if (this != &otro) { // Evitar auto-asignación
-        // Copiar datos básicos
+    if (this != &otro) {
         nickname = otro.nickname;
         tipoMembresia = otro.tipoMembresia;
         ciudad = otro.ciudad;
         pais = otro.pais;
         fechaInscripcion = otro.fechaInscripcion;
 
-        // Limpiar favoritos existentes
         limpiarFavoritos();
         delete[] favoritos;
 
-        // Copiar lista de favoritos
         capacidadFavoritos = otro.capacidadFavoritos;
         if (capacidadFavoritos > 0) {
             favoritos = new Cancion*[capacidadFavoritos];
@@ -99,19 +85,16 @@ Usuario& Usuario::operator=(const Usuario& otro)
             cantidadFavoritos = 0;
         }
 
-        // No copiamos usuario seguido (es referencia)
         usuarioSeguido = nullptr;
     }
     return *this;
 }
 
-// OPERADOR DE IGUALDAD (sobrecarga requerida)
 bool Usuario::operator==(const Usuario& otro) const
 {
     return nickname == otro.nickname;
 }
 
-// OPERADOR DE DESIGUALDAD
 bool Usuario::operator!=(const Usuario& otro) const
 {
     return !(*this == otro);
@@ -122,12 +105,11 @@ void Usuario::aumentarCapacidadFavoritos()
     int nuevaCapacidad;
 
     if (capacidadFavoritos == 0) {
-        nuevaCapacidad = 10; // Capacidad inicial
+        nuevaCapacidad = 10;
     } else {
         nuevaCapacidad = capacidadFavoritos * 2;
     }
 
-    // Limitar a 10000 como máximo (requerimiento del enunciado)
     if (nuevaCapacidad > 10000) {
         nuevaCapacidad = 10000;
     }
@@ -145,12 +127,11 @@ void Usuario::aumentarCapacidadFavoritos()
 
 bool Usuario::validarFecha(int fecha) const
 {
-    // Validación básica de fecha (AAAAMMDD)
     if (fecha < 19000101 || fecha > 21001231) {
         return false;
     }
 
-    int año = fecha / 10000;
+    int anio = fecha / 10000;
     int mes = (fecha / 100) % 100;
     int dia = fecha % 100;
 
@@ -158,21 +139,25 @@ bool Usuario::validarFecha(int fecha) const
         return false;
     }
 
+    (void)anio;
     return true;
 }
 
-// Getters
 const std::string& Usuario::getNickname() const { return nickname; }
 const std::string& Usuario::getTipoMembresia() const { return tipoMembresia; }
 const std::string& Usuario::getCiudad() const { return ciudad; }
 const std::string& Usuario::getPais() const { return pais; }
 int Usuario::getFechaInscripcion() const { return fechaInscripcion; }
-bool Usuario::esPremium() const { return tipoMembresia == "premium"; }
 
-// Gestión de favoritos
+bool Usuario::esPremium() const
+{
+    if (tipoMembresia == "premium") return true;
+    if (tipoMembresia == "plan premium") return true;
+    return false;
+}
+
 bool Usuario::agregarFavorito(Cancion* cancion)
 {
-    // Solo usuarios premium pueden tener favoritos
     if (!esPremium()) {
         cout << "Error: Solo usuarios premium pueden agregar favoritos." << endl;
         return false;
@@ -183,24 +168,20 @@ bool Usuario::agregarFavorito(Cancion* cancion)
         return false;
     }
 
-    // Verificar límite de 10000 canciones
     if (estaLlenaListaFavoritos()) {
         cout << "Error: Lista de favoritos llena (máximo 10000 canciones)." << endl;
         return false;
     }
 
-    // Verificar que no esté ya en favoritos
     if (tieneFavorito(cancion)) {
         cout << "Error: La canción ya está en favoritos." << endl;
         return false;
     }
 
-    // Aumentar capacidad si es necesario
     if (cantidadFavoritos == capacidadFavoritos) {
         aumentarCapacidadFavoritos();
     }
 
-    // Agregar a la lista
     favoritos[cantidadFavoritos] = cancion;
     cantidadFavoritos++;
 
@@ -218,11 +199,9 @@ bool Usuario::eliminarFavorito(int idCancion)
 
     for (int i = 0; i < cantidadFavoritos; ++i) {
         if (favoritos[i] != nullptr && favoritos[i]->obtenerId() == idCancion) {
-            // Mostrar información de la canción eliminada
             cout << "Eliminando canción '" << favoritos[i]->obtenerNombre()
                  << "' de favoritos." << endl;
 
-            // Mover todas las canciones posteriores una posición hacia atrás
             for (int j = i; j < cantidadFavoritos - 1; ++j) {
                 favoritos[j] = favoritos[j + 1];
             }
@@ -281,7 +260,6 @@ bool Usuario::estaLlenaListaFavoritos() const
     return cantidadFavoritos >= 10000;
 }
 
-// Seguir usuario
 bool Usuario::seguirUsuario(Usuario* usuario)
 {
     if (!esPremium()) {
@@ -330,7 +308,6 @@ bool Usuario::estaSiguiendoA(const std::string& nickname) const
     return (usuarioSeguido != nullptr && usuarioSeguido->getNickname() == nickname);
 }
 
-// Combinar listas (para funcionalidad de seguir)
 bool Usuario::combinarConListaDe(Usuario* otroUsuario)
 {
     if (!esPremium() || otroUsuario == nullptr || !otroUsuario->esPremium()) {
@@ -357,7 +334,6 @@ bool Usuario::combinarConListaDe(Usuario* otroUsuario)
     return cancionesAgregadas > 0;
 }
 
-// Utilidades
 void Usuario::mostrarInformacion() const
 {
     cout << "\n=== INFORMACIÓN DE USUARIO ===" << endl;
@@ -378,10 +354,6 @@ std::string Usuario::obtenerInfoResumida() const
 {
     return nickname + " (" + tipoMembresia + ") - " + ciudad + ", " + pais;
 }
-
-// ============================================================================
-// MÉTODOS DE NAVEGACIÓN EN HISTORIAL
-// ============================================================================
 
 bool Usuario::puedeRetroceder() const {
     return esPremium() && posicionActualHistorial > 0;
@@ -416,12 +388,10 @@ void Usuario::agregarAlHistorial(Cancion* cancion) {
         return;
     }
 
-    // Si estamos en medio del historial, truncamos
     if (posicionActualHistorial < cantidadEnHistorial - 1) {
         cantidadEnHistorial = posicionActualHistorial + 1;
     }
 
-    // Si el historial está lleno, desplazamos
     if (cantidadEnHistorial >= MAX_HISTORIAL) {
         for (int i = 0; i < MAX_HISTORIAL - 1; ++i) {
             historialReproduccion[i] = historialReproduccion[i + 1];
@@ -429,7 +399,6 @@ void Usuario::agregarAlHistorial(Cancion* cancion) {
         cantidadEnHistorial = MAX_HISTORIAL - 1;
     }
 
-    // Agregar nueva canción
     historialReproduccion[cantidadEnHistorial] = cancion;
     posicionActualHistorial = cantidadEnHistorial;
     cantidadEnHistorial++;
@@ -449,10 +418,6 @@ int Usuario::getCantidadEnHistorial() const {
     return cantidadEnHistorial;
 }
 
-// ============================================================================
-// CONTROL DE REPRODUCCIÓN
-// ============================================================================
-
 void Usuario::iniciarReproduccion(Cancion* cancion) {
     if (cancion == nullptr) {
         cout << "Error: Canción inválida para reproducir." << endl;
@@ -462,12 +427,10 @@ void Usuario::iniciarReproduccion(Cancion* cancion) {
     cancionActual = cancion;
     reproduciendo = true;
 
-    // Agregar al historial (solo premium)
     if (esPremium()) {
         agregarAlHistorial(cancion);
     }
 
-    // Incrementar contador para publicidad (solo estándar)
     if (!esPremium()) {
         incrementarContadorPublicidad();
     }
@@ -492,12 +455,7 @@ Cancion* Usuario::getCancionActual() const {
     return cancionActual;
 }
 
-// ============================================================================
-// CONTROL DE PUBLICIDAD
-// ============================================================================
-
 bool Usuario::debeMostrarPublicidad() const {
-    // Usuarios estándar ven publicidad cada 2 canciones
     return !esPremium() && (contadorCancionesReproducidas % 2 == 0) && (contadorCancionesReproducidas > 0);
 }
 
@@ -511,4 +469,35 @@ void Usuario::reiniciarContadorPublicidad() {
 
 int Usuario::getContadorCancionesReproducidas() const {
     return contadorCancionesReproducidas;
+}
+
+void Usuario::setTipoMembresia(const std::string& tipo)
+{
+    bool eraPremium = esPremium();
+
+    tipoMembresia = tipo;
+
+    bool ahoraPremium = esPremium();
+
+    if (!eraPremium && ahoraPremium)
+    {
+        if (historialReproduccion == nullptr)
+        {
+            historialReproduccion = new Cancion*[MAX_HISTORIAL];
+            for (int i = 0; i < MAX_HISTORIAL; ++i) historialReproduccion[i] = nullptr;
+        }
+        cantidadEnHistorial = 0;
+        posicionActualHistorial = -1;
+    }
+    else if (eraPremium && !ahoraPremium)
+    {
+        if (historialReproduccion != nullptr)
+        {
+            delete[] historialReproduccion;
+            historialReproduccion = nullptr;
+        }
+        cantidadEnHistorial = 0;
+        posicionActualHistorial = -1;
+        cantidadFavoritos = 0;
+    }
 }
