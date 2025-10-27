@@ -16,6 +16,10 @@ SOURCES += \
         main.cpp \
         plan_estandar.cpp \
         plan_premium.cpp
+        mensaje_publicitario.cpp \
+        sistema.cpp \
+        usuario.cpp
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -31,3 +35,6 @@ HEADERS += \
     credito.h \
     plan_estandar.h \
     plan_premium.h
+    mensaje_publicitario.h \
+    sistema.h \
+    usuario.h

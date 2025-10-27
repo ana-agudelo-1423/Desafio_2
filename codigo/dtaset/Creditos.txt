@@ -1,0 +1,51 @@
+id;nombre;rol
+1;Ovy On The Drums;Productor
+2;Tainy;Productor
+3;Sky Rompiendo;Productor
+4;Andres Saavedra;Compositor
+5;Keityn;Compositor
+6;Feid;Compositor
+7;Mauricio Rengifo;Productor
+8;Andres Torres;Productor
+9;El Guincho;Productor
+10;Tiny;Ingeniero de sonido
+11;Mosty;Mezcla
+12;Colombian Gang Beats;Arreglista
+13;DJ Luian;Beatmaker
+14;Chris Jeday;Beatmaker
+15;Cesar Lopez;Guitarrista
+16;Danna Paola;Coros
+17;Sebastian Obando;Voz adicional
+18;Rafael Arcaute;Ingeniero
+19;Mambo Kingz;Productor
+20;Fabian Rendon;Letrista
+21;Metro Boomin;Productor
+22;Mike Dean;Mezcla
+23;Andrew Watt;Productor
+24;Louis Bell;Ingeniero
+25;Frank Dukes;Productor
+26;Kuk Harrell;Productor vocal
+27;Pharrell Williams;Productor
+28;Timbaland;Productor
+29;Swizz Beatz;Productor
+30;David Guetta;Productor
+31;Calvin Harris;Productor
+32;Zedd;Productor
+33;Diplo;Productor
+34;Mark Ronson;Productor
+35;Max Martin;Productor
+36;Shellback;Productor
+37;Ilya;Productor
+38;Ricky Reed;Productor
+39;Jon Bellion;Compositor
+40;Julia Michaels;Compositor
+41;Justin Tranter;Compositor
+42;Sia;Compositor
+43;Starrah;Compositor
+44;Noah "40" Shebib;Productor
+45;Boi-1da;Productor
+46;Nineteen85;Productor
+47;WondaGurl;Productor
+48;Murda Beatz;Productor
+49;Southside;Productor
+50;Pi'erre Bourne;Productor

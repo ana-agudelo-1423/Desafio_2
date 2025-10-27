@@ -1,0 +1,76 @@
+id;nombre;fechaAAAAMMDD;selloDisquero;rutaPortada;idArtista
+101;Laundry Service;20011113;Epic Records;shakira_laundry.jpg;1
+102;11:11;20190517;Sony Music;maluma_1111.jpg;2
+103;Mañana Será Bonito;20230224;Universal;karolg_manana.jpg;3
+104;Colores;20200319;Universal;jbalvin_colores.jpg;4
+105;Un Verano Sin Ti;20220506;Rimas;badbunny_verano.jpg;5
+106;Saturno;20221111;Sony Music;rauw_saturno.jpg;6
+107;Un Día Normal;20020507;Surco;juanes_dianormal.jpg;7
+108;Dharma;20220128;Universal;yatra_dharma.jpg;8
+109;Mis Manos;20210304;Sony Music;camilo_mismanos.jpg;9
+110;Cumbiana;20200522;Sony Music;vives_cumbiana.jpg;10
+111;Feliz Cumpleaños Ferxxo;20220914;Universal;feid_cumple.jpg;11
+112;Ilusión;20230505;Sony Music;fonseca_ilusion.jpg;12
+113;2000;20230317;Universal;turizo_2000.jpg;13
+114;¿A Dónde Vamos?;20210422;Universal;morat_adonde.jpg;14
+115;Motomami;20220318;Columbia;rosalia_motomami.jpg;15
+116;Odisea;20170825;VP;ozuna_odisea.jpg;16
+117;Prestige;20120913;El Cartel;daddy_prestige.jpg;17
+118;Fénix;20170217;Sony Music;nicky_fenix.jpg;18
+119;Kisses;20190405;Warner;anitta_kisses.jpg;19
+120;A Medio Vivir;19950912;Sony Music;ricky_mediovivir.jpg;20
+121;Future Nostalgia;20200327;Warner;dualipa_future.jpg;21
+122;1989;20141027;Big Machine;taylor_1989.jpg;22
+123;When We All Fall Asleep;20190329;Interscope;billie_fallasleep.jpg;23
+124;÷ (Divide);20170303;Asylum;edsheeran_divide.jpg;24
+125;24K Magic;20161118;Atlantic;bruno_24k.jpg;25
+126;After Hours;20200320;XO;weeknd_after.jpg;26
+127;Donda;20210829;GOOD;kanye_donda.jpg;27
+128;Certified Lover Boy;20210903;OVO;drake_clb.jpg;28
+129;Renaissance;20220729;Columbia;beyonce_renaissance.jpg;29
+130;Anti;20160128;Roc Nation;rihanna_anti.jpg;30
+131;Teenage Dream;20100824;Capitol;katy_teenage.jpg;31
+132;Thank U, Next;20190208;Republic;ariana_thanku.jpg;32
+133;The Fame;20080819;Interscope;gaga_fame.jpg;33
+134;3.0;20130723;Sony Latin;marc_30.jpg;34
+135;Euphoria;20100705;Universal;enrique_euphoria.jpg;35
+136;Los Vaqueros;20050607;WY;wisin_vaqueros.jpg;36
+137;De Líder a Leyenda;20131015;Sony;yandel_leyenda.jpg;37
+138;King of Kings;20060523;Machete;domar_kings.jpg;38
+139;Iluminatti;20190503;Pina;natti_iluminatti.jpg;39
+140;Gangalee;20190531;Carbon Fiber;farruko_gangalee.jpg;40
+141;Lyke Myke;20210423;One World;myke_lyke.jpg;41
+142;Hecho en Medellín;20220603;Warner;blessd_hecho.jpg;42
+143;Jordan;20220728;La Venda;ryan_jordan.jpg;43
+144;TRAP KITTY;20230804;The Orchard;miko_trap.jpg;44
+145;Animal;20230913;300;becerra_animal.jpg;45
+146;Homerun;20190523;Warner;londra_homerun.jpg;46
+147;TINI TINI TINI;20200603;Hollywood;tini_tini.jpg;47
+148;Buena Vida;20100420;Sony;diego_buena.jpg;48
+149;Mil Ciudades;20190426;Sony;cepeda_ciudades.jpg;49
+150;Felicito;20080527;Universal;fanny_felicito.jpg;50
+151;Oral Fixation Vol. 2;20051128;Epic;shakira_oral.jpg;1
+152;Papi Juancho;20200821;Sony;maluma_papi.jpg;2
+153;OCEAN;20230504;Universal;karolg_ocean.jpg;3
+154;Vibras;20180525;Universal;jbalvin_vibras.jpg;4
+155;X 100PRE;20181224;Rimas;badbunny_x100pre.jpg;5
+156;Afrodisíaco;20201113;Sony;rauw_afro.jpg;6
+157;Mi Sangre;20040928;Surco;juanes_sangre.jpg;7
+158;Mantra;20180525;Universal;yatra_mantra.jpg;8
+159;Por Primera Vez;20200807;Sony;camilo_primera.jpg;9
+160;Corazón Profundo;20130521;Sony;vives_corazon.jpg;10
+161;Inter Shibuya;20210903;Universal;feid_shibuya.jpg;11
+162;Gratitud;20080318;EMI;fonseca_gratitud.jpg;12
+163;ADN;20190517;Universal;turizo_adn.jpg;13
+164;Balas Perdidas;20210218;Universal;morat_balas.jpg;14
+165;El Mal Querer;20181102;Columbia;rosalia_malquerer.jpg;15
+166;Aura;20190823;VP;ozuna_aura.jpg;16
+167;Barrio Fino;20040713;El Cartel;daddy_barrio.jpg;17
+168;The Black Carpet;20071204;Sony;nicky_black.jpg;18
+169;Bang!;20150410;Warner;anitta_bang.jpg;19
+170;Vuelve;19980212;Sony;ricky_vuelve.jpg;20
+171;Dua Lipa;20170602;Warner;dualipa_dua.jpg;21
+172;Lover;20190823;Republic;taylor_lover.jpg;22
+173;Happier Than Ever;20210730;Interscope;billie_happier.jpg;23
+174;No.6 Collaborations;20190712;Asylum;edsheeran_no6.jpg;24
+175;Doo-Wops & Hooligans;20101005;Atlantic;bruno_doowops.jpg;25

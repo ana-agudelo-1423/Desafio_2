@@ -1,0 +1,20 @@
+juan_perez;premium;Bogota;Colombia;2024-10-15
+maria_gomez;estandar;Medellin;Colombia;2024-10-10
+carlos_li;premium;Cali;Colombia;2024-10-05
+ana_rodriguez;estandar;Barranquilla;Colombia;2024-09-28
+laura_martinez;premium;Cartagena;Colombia;2024-09-20
+david_sanchez;estandar;Bucaramanga;Colombia;2024-09-15
+sofia_garcia;premium;Cucuta;Colombia;2024-09-10
+miguel_lopez;estandar;Santa Marta;Colombia;2024-09-05
+isabella_ramirez;premium;Pereira;Colombia;2024-08-30
+daniel_herrera;estandar;Manizales;Colombia;2024-08-25
+valentina_diaz;premium;Ibague;Colombia;2024-08-20
+alejandro_moreno;estandar;Villavicencio;Colombia;2024-08-15
+camila_silva;premium;Monteria;Colombia;2024-08-10
+andres_castro;estandar;Valledupar;Colombia;2024-08-05
+natalia_ruiz;premium;Sincelejo;Colombia;2024-07-30
+javier_ortiz;estandar;Pasto;Colombia;2024-07-25
+carolina_vega;premium;Armenia;Colombia;2024-07-20
+santiago_mendoza;estandar;Neiva;Colombia;2024-07-15
+paula_rios;premium;Riohacha;Colombia;2024-07-10
+esteban_gomez;estandar;Quibdo;Colombia;2024-07-05

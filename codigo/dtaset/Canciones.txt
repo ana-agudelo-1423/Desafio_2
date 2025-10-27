@@ -1,0 +1,178 @@
+id;idAlbum;duracion;nombre;ruta128;ruta320
+1001;101;235.0;Whenever Wherever;C:/128/shakira_1.ogg;C:/320/shakira_1.ogg
+1002;101;220.0;Underneath Your Clothes;C:/128/shakira_2.ogg;C:/320/shakira_2.ogg
+1003;101;245.0;Te Dejo Madrid;C:/128/shakira_3.ogg;C:/320/shakira_3.ogg
+1004;101;210.0;Objection (Tango);C:/128/shakira_4.ogg;C:/320/shakira_4.ogg
+1005;102;205.0;HP;C:/128/maluma_1.ogg;C:/320/maluma_1.ogg
+1006;102;210.0;11 PM;C:/128/maluma_2.ogg;C:/320/maluma_2.ogg
+1007;102;195.0;No Se Me Quita;C:/128/maluma_3.ogg;C:/320/maluma_3.ogg
+1008;102;225.0;Dispuesto;C:/128/maluma_4.ogg;C:/320/maluma_4.ogg
+1009;103;215.0;Provenza;C:/128/karolg_1.ogg;C:/320/karolg_1.ogg
+1010;103;230.0;TQG;C:/128/karolg_2.ogg;C:/320/karolg_2.ogg
+1011;103;220.0;Mientras Me Curo del Cora;C:/128/karolg_3.ogg;C:/320/karolg_3.ogg
+1012;103;205.0;Gatubela;C:/128/karolg_4.ogg;C:/320/karolg_4.ogg
+1013;104;190.0;Amarillo;C:/128/jbalvin_1.ogg;C:/320/jbalvin_1.ogg
+1014;104;185.0;Azul;C:/128/jbalvin_2.ogg;C:/320/jbalvin_2.ogg
+1015;104;200.0;Rojo;C:/128/jbalvin_3.ogg;C:/320/jbalvin_3.ogg
+1016;104;195.0;Arcoíris;C:/128/jbalvin_4.ogg;C:/320/jbalvin_4.ogg
+1017;105;250.0;Titi Me Pregunto;C:/128/badbunny_1.ogg;C:/320/badbunny_1.ogg
+1018;105;245.0;Me Porto Bonito;C:/128/badbunny_2.ogg;C:/320/badbunny_2.ogg
+1019;105;235.0;Efecto;C:/128/badbunny_3.ogg;C:/320/badbunny_3.ogg
+1020;105;240.0;Ojitos Lindos;C:/128/badbunny_4.ogg;C:/320/badbunny_4.ogg
+1021;106;230.0;De Carolina;C:/128/rauw_1.ogg;C:/320/rauw_1.ogg
+1022;106;225.0;Punto 40;C:/128/rauw_2.ogg;C:/320/rauw_2.ogg
+1023;106;235.0;Lejos del Cielo;C:/128/rauw_3.ogg;C:/320/rauw_3.ogg
+1024;106;220.0;Dile a Él;C:/128/rauw_4.ogg;C:/320/rauw_4.ogg
+1025;107;220.0;A Dios le Pido;C:/128/juanes_1.ogg;C:/320/juanes_1.ogg
+1026;107;215.0;La Camisa Negra;C:/128/juanes_2.ogg;C:/320/juanes_2.ogg
+1027;107;230.0;Es Por Ti;C:/128/juanes_3.ogg;C:/320/juanes_3.ogg
+1028;107;225.0;Mala Gente;C:/128/juanes_4.ogg;C:/320/juanes_4.ogg
+1029;108;210.0;Tacones Rojos;C:/128/yatra_1.ogg;C:/320/yatra_1.ogg
+1030;108;205.0;Pareja del Año;C:/128/yatra_2.ogg;C:/320/yatra_2.ogg
+1031;108;215.0;Chica Ideal;C:/128/yatra_3.ogg;C:/320/yatra_3.ogg
+1032;108;200.0;Adiós;C:/128/yatra_4.ogg;C:/320/yatra_4.ogg
+1033;109;205.0;Tutu;C:/128/camilo_1.ogg;C:/320/camilo_1.ogg
+1034;109;195.0;Favorito;C:/128/camilo_2.ogg;C:/320/camilo_2.ogg
+1035;109;210.0;Por Primera Vez;C:/128/camilo_3.ogg;C:/320/camilo_3.ogg
+1036;109;200.0;Medialuna;C:/128/camilo_4.ogg;C:/320/camilo_4.ogg
+1037;110;215.0;For Sale;C:/128/vives_1.ogg;C:/320/vives_1.ogg
+1038;110;220.0;No Te Vayas;C:/128/vives_2.ogg;C:/320/vives_2.ogg
+1039;110;210.0;Las Locuras Mías;C:/128/vives_3.ogg;C:/320/vives_3.ogg
+1040;110;225.0;Hechicera;C:/128/vives_4.ogg;C:/320/vives_4.ogg
+1041;111;200.0;Nina Bonita;C:/128/feid_1.ogg;C:/320/feid_1.ogg
+1042;111;195.0;Normal;C:/128/feid_2.ogg;C:/320/feid_2.ogg
+1043;111;205.0;Ferxxo 100;C:/128/feid_3.ogg;C:/320/feid_3.ogg
+1044;111;210.0;Belixe;C:/128/feid_4.ogg;C:/320/feid_4.ogg
+1045;112;230.0;Eres Mi Sueño;C:/128/fonseca_1.ogg;C:/320/fonseca_1.ogg
+1046;112;225.0;Te Mando Flores;C:/128/fonseca_2.ogg;C:/320/fonseca_2.ogg
+1047;112;235.0;Hace Tiempo;C:/128/fonseca_3.ogg;C:/320/fonseca_3.ogg
+1048;112;220.0;Arroyito;C:/128/fonseca_4.ogg;C:/320/fonseca_4.ogg
+1049;113;210.0;La Bachata;C:/128/turizo_1.ogg;C:/320/turizo_1.ogg
+1050;113;205.0;Una Lady Como Tú;C:/128/turizo_2.ogg;C:/320/turizo_2.ogg
+1051;113;215.0;Esperándote;C:/128/turizo_3.ogg;C:/320/turizo_3.ogg
+1052;113;200.0;Déjate Llevar;C:/128/turizo_4.ogg;C:/320/turizo_4.ogg
+1053;114;195.0;506;C:/128/morat_1.ogg;C:/320/morat_1.ogg
+1054;114;200.0;Paris;C:/128/morat_2.ogg;C:/320/morat_2.ogg
+1055;114;205.0;Debí Suponerlo;C:/128/morat_3.ogg;C:/320/morat_3.ogg
+1056;114;210.0;No Se Va;C:/128/morat_4.ogg;C:/320/morat_4.ogg
+1057;115;190.0;Saoko;C:/128/rosalia_1.ogg;C:/320/rosalia_1.ogg
+1058;115;195.0;Candy;C:/128/rosalia_2.ogg;C:/320/rosalia_2.ogg
+1059;115;200.0;La Fama;C:/128/rosalia_3.ogg;C:/320/rosalia_3.ogg
+1060;115;205.0;Chicken Teriyaki;C:/128/rosalia_4.ogg;C:/320/rosalia_4.ogg
+1061;116;245.0;Se Preparó;C:/128/ozuna_1.ogg;C:/320/ozuna_1.ogg
+1062;116;240.0;Te Boté;C:/128/ozuna_2.ogg;C:/320/ozuna_2.ogg
+1063;116;235.0;El Farsante;C:/128/ozuna_3.ogg;C:/320/ozuna_3.ogg
+1064;116;230.0;La Modelo;C:/128/ozuna_4.ogg;C:/320/ozuna_4.ogg
+1065;117;250.0;Gasolina;C:/128/daddy_1.ogg;C:/320/daddy_1.ogg
+1066;117;245.0;Rompe;C:/128/daddy_2.ogg;C:/320/daddy_2.ogg
+1067;117;240.0;Lo Que Pasó, Pasó;C:/128/daddy_3.ogg;C:/320/daddy_3.ogg
+1068;117;235.0;Sígueme y Te Sigo;C:/128/daddy_4.ogg;C:/320/daddy_4.ogg
+1069;118;220.0;El Perdón;C:/128/nicky_1.ogg;C:/320/nicky_1.ogg
+1070;118;215.0;Travesuras;C:/128/nicky_2.ogg;C:/320/nicky_2.ogg
+1071;118;225.0;X;C:/128/nicky_3.ogg;C:/320/nicky_3.ogg
+1072;118;230.0;El Amante;C:/128/nicky_4.ogg;C:/320/nicky_4.ogg
+1073;119;200.0;Me Gusta;C:/128/anitta_1.ogg;C:/320/anitta_1.ogg
+1074;119;195.0;Envolver;C:/128/anitta_2.ogg;C:/320/anitta_2.ogg
+1075;119;205.0;Girl From Rio;C:/128/anitta_3.ogg;C:/320/anitta_3.ogg
+1076;119;210.0;Used to Be;C:/128/anitta_4.ogg;C:/320/anitta_4.ogg
+1077;120;245.0;María;C:/128/ricky_1.ogg;C:/320/ricky_1.ogg
+1078;120;240.0;Livin' la Vida Loca;C:/128/ricky_2.ogg;C:/320/ricky_2.ogg
+1079;120;235.0;Vuelve;C:/128/ricky_3.ogg;C:/320/ricky_3.ogg
+1080;120;230.0;The Cup of Life;C:/128/ricky_4.ogg;C:/320/ricky_4.ogg
+1081;121;220.0;Don't Start Now;C:/128/dualipa_1.ogg;C:/320/dualipa_1.ogg
+1082;121;215.0;Physical;C:/128/dualipa_2.ogg;C:/320/dualipa_2.ogg
+1083;121;225.0;Levitating;C:/128/dualipa_3.ogg;C:/320/dualipa_3.ogg
+1084;121;230.0;Break My Heart;C:/128/dualipa_4.ogg;C:/320/dualipa_4.ogg
+1085;122;235.0;Shake It Off;C:/128/taylor_1.ogg;C:/320/taylor_1.ogg
+1086;122;240.0;Blank Space;C:/128/taylor_2.ogg;C:/320/taylor_2.ogg
+1087;122;230.0;Bad Blood;C:/128/taylor_3.ogg;C:/320/taylor_3.ogg
+1088;122;225.0;Style;C:/128/taylor_4.ogg;C:/320/taylor_4.ogg
+1089;123;245.0;Bad Guy;C:/128/billie_1.ogg;C:/320/billie_1.ogg
+1090;123;240.0;When the Party's Over;C:/128/billie_2.ogg;C:/320/billie_2.ogg
+1091;123;235.0;All the Good Girls;C:/128/billie_3.ogg;C:/320/billie_3.ogg
+1092;123;230.0;Wish You Were Gay;C:/128/billie_4.ogg;C:/320/billie_4.ogg
+1093;124;250.0;Shape of You;C:/128/edsheeran_1.ogg;C:/320/edsheeran_1.ogg
+1094;124;245.0;Castle on the Hill;C:/128/edsheeran_2.ogg;C:/320/edsheeran_2.ogg
+1095;124;240.0;Galway Girl;C:/128/edsheeran_3.ogg;C:/320/edsheeran_3.ogg
+1096;124;235.0;Perfect;C:/128/edsheeran_4.ogg;C:/320/edsheeran_4.ogg
+1097;125;220.0;24K Magic;C:/128/bruno_1.ogg;C:/320/bruno_1.ogg
+1098;125;215.0;That's What I Like;C:/128/bruno_2.ogg;C:/320/bruno_2.ogg
+1099;125;225.0;Versace on the Floor;C:/128/bruno_3.ogg;C:/320/bruno_3.ogg
+1100;125;230.0;Chunky;C:/128/bruno_4.ogg;C:/320/bruno_4.ogg
+1101;126;235.0;Blinding Lights;C:/128/weeknd_1.ogg;C:/320/weeknd_1.ogg
+1102;126;240.0;Save Your Tears;C:/128/weeknd_2.ogg;C:/320/weeknd_2.ogg
+1103;126;230.0;In Your Eyes;C:/128/weeknd_3.ogg;C:/320/weeknd_3.ogg
+1104;126;225.0;After Hours;C:/128/weeknd_4.ogg;C:/320/weeknd_4.ogg
+1105;127;245.0;Hurricane;C:/128/kanye_1.ogg;C:/320/kanye_1.ogg
+1106;127;240.0;Jail;C:/128/kanye_2.ogg;C:/320/kanye_2.ogg
+1107;127;235.0;Off the Grid;C:/128/kanye_3.ogg;C:/320/kanye_3.ogg
+1108;127;230.0;Praise God;C:/128/kanye_4.ogg;C:/320/kanye_4.ogg
+1109;128;250.0;Way 2 Sexy;C:/128/drake_1.ogg;C:/320/drake_1.ogg
+1110;128;245.0;Girls Want Girls;C:/128/drake_2.ogg;C:/320/drake_2.ogg
+1111;128;240.0;Fair Trade;C:/128/drake_3.ogg;C:/320/drake_3.ogg
+1112;128;235.0;Champagne Poetry;C:/128/drake_4.ogg;C:/320/drake_4.ogg
+1113;129;220.0;Break My Soul;C:/128/beyonce_1.ogg;C:/320/beyonce_1.ogg
+1114;129;215.0;Cuff It;C:/128/beyonce_2.ogg;C:/320/beyonce_2.ogg
+1115;129;225.0;Alien Superstar;C:/128/beyonce_3.ogg;C:/320/beyonce_3.ogg
+1116;129;230.0;Energy;C:/128/beyonce_4.ogg;C:/320/beyonce_4.ogg
+1117;130;235.0;Work;C:/128/rihanna_1.ogg;C:/320/rihanna_1.ogg
+1118;130;240.0;Needed Me;C:/128/rihanna_2.ogg;C:/320/rihanna_2.ogg
+1119;130;230.0;Love on the Brain;C:/128/rihanna_3.ogg;C:/320/rihanna_3.ogg
+1120;130;225.0;Kiss It Better;C:/128/rihanna_4.ogg;C:/320/rihanna_4.ogg
+1121;131;245.0;Teenage Dream;C:/128/katy_1.ogg;C:/320/katy_1.ogg
+1122;131;240.0;California Gurls;C:/128/katy_2.ogg;C:/320/katy_2.ogg
+1123;131;235.0;Firework;C:/128/katy_3.ogg;C:/320/katy_3.ogg
+1124;131;230.0;Last Friday Night;C:/128/katy_4.ogg;C:/320/katy_4.ogg
+1125;132;250.0;Thank U, Next;C:/128/ariana_1.ogg;C:/320/ariana_1.ogg
+1126;132;245.0;7 Rings;C:/128/ariana_2.ogg;C:/320/ariana_2.ogg
+1127;132;240.0;Break Up With Your;C:/128/ariana_3.ogg;C:/320/ariana_3.ogg
+1128;132;235.0;NASA;C:/128/ariana_4.ogg;C:/320/ariana_4.ogg
+1129;133;220.0;Just Dance;C:/128/gaga_1.ogg;C:/320/gaga_1.ogg
+1130;133;215.0;Poker Face;C:/128/gaga_2.ogg;C:/320/gaga_2.ogg
+1131;133;225.0;Bad Romance;C:/128/gaga_3.ogg;C:/320/gaga_3.ogg
+1132;133;230.0;Paparazzi;C:/128/gaga_4.ogg;C:/320/gaga_4.ogg
+1133;134;235.0;Vivir Mi Vida;C:/128/marc_1.ogg;C:/320/marc_1.ogg
+1134;134;240.0;Flor Pálida;C:/128/marc_2.ogg;C:/320/marc_2.ogg
+1135;134;230.0;Y Hubo Alguien;C:/128/marc_3.ogg;C:/320/marc_3.ogg
+1136;134;225.0;Valió la Pena;C:/128/marc_4.ogg;C:/320/marc_4.ogg
+1137;135;245.0;I Like It;C:/128/enrique_1.ogg;C:/320/enrique_1.ogg
+1138;135;240.0;Tonight;C:/128/enrique_2.ogg;C:/320/enrique_2.ogg
+1139;135;235.0;Heartbeat;C:/128/enrique_3.ogg;C:/320/enrique_3.ogg
+1140;135;230.0;Dirty Dancer;C:/128/enrique_4.ogg;C:/320/enrique_4.ogg
+1141;136;250.0;Rakata;C:/128/wisin_1.ogg;C:/320/wisin_1.ogg
+1142;136;245.0;Llamé Pa' Verte;C:/128/wisin_2.ogg;C:/320/wisin_2.ogg
+1143;136;240.0;Pam Pam;C:/128/wisin_3.ogg;C:/320/wisin_3.ogg
+1144;136;235.0;Noche de Entierro;C:/128/wisin_4.ogg;C:/320/wisin_4.ogg
+1145;137;220.0;Plakito;C:/128/yandel_1.ogg;C:/320/yandel_1.ogg
+1146;137;215.0;Encantadora;C:/128/yandel_2.ogg;C:/320/yandel_2.ogg
+1147;137;225.0;Hasta Abajo;C:/128/yandel_3.ogg;C:/320/yandel_3.ogg
+1148;137;230.0;Movimiento de Cadera;C:/128/yandel_4.ogg;C:/320/yandel_4.ogg
+1149;138;235.0;Danza Kuduro;C:/128/domar_1.ogg;C:/320/domar_1.ogg
+1150;138;240.0;Virtual Diva;C:/128/domar_2.ogg;C:/320/domar_2.ogg
+1151;138;230.0;Ella y Yo;C:/128/domar_3.ogg;C:/320/domar_3.ogg
+1152;138;225.0;Pobre Diabla;C:/128/domar_4.ogg;C:/320/domar_4.ogg
+1153;139;245.0;Criminal;C:/128/natti_1.ogg;C:/320/natti_1.ogg
+1154;139;240.0;Quién Sabe;C:/128/natti_2.ogg;C:/320/natti_2.ogg
+1155;139;235.0;La Mejor Versión;C:/128/natti_3.ogg;C:/320/natti_3.ogg
+1156;139;230.0;Justicia;C:/128/natti_4.ogg;C:/320/natti_4.ogg
+1157;140;250.0;Krippy Kush;C:/128/farruko_1.ogg;C:/320/farruko_1.ogg
+1158;140;245.0;Calma;C:/128/farruko_2.ogg;C:/320/farruko_2.ogg
+1159;140;240.0;Inolvidable;C:/128/farruko_3.ogg;C:/320/farruko_3.ogg
+1160;140;235.0;Sunset;C:/128/farruko_4.ogg;C:/320/farruko_4.ogg
+1161;141;220.0;La Curiosidad;C:/128/myke_1.ogg;C:/320/myke_1.ogg
+1162;141;215.0;Pareja del Año;C:/128/myke_2.ogg;C:/320/myke_2.ogg
+1163;141;225.0;Diosa;C:/128/myke_3.ogg;C:/320/myke_3.ogg
+1164;141;230.0;Lala;C:/128/myke_4.ogg;C:/320/myke_4.ogg
+1165;142;235.0;Medallo;C:/128/blessd_1.ogg;C:/320/blessd_1.ogg
+1166;142;240.0;Poblado;C:/128/blessd_2.ogg;C:/320/blessd_2.ogg
+1167;142;230.0;Pantysito;C:/128/blessd_3.ogg;C:/320/blessd_3.ogg
+1168;142;225.0;Jordan;C:/128/blessd_4.ogg;C:/320/blessd_4.ogg
+1169;143;245.0;Mujeriego;C:/128/ryan_1.ogg;C:/320/ryan_1.ogg
+1170;143;240.0;Monastery;C:/128/ryan_2.ogg;C:/320/ryan_2.ogg
+1171;143;235.0;Leona;C:/128/ryan_3.ogg;C:/320/ryan_3.ogg
+1172;143;230.0;Noche de Teteo;C:/128/ryan_4.ogg;C:/320/ryan_4.ogg
+1173;144;250.0;Classy 101;C:/128/miko_1.ogg;C:/320/miko_1.ogg
+1174;144;245.0;Lisa;C:/128/miko_2.ogg;C:/320/miko_2.ogg
+1175;144;240.0;Wiggy;C:/128/miko_3.ogg;C:/320/miko_3.ogg
+1176;144;235.0;Riri;C:/128/miko_4.ogg;C:/320/miko_4.ogg
+117
