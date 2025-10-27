@@ -7,11 +7,19 @@ CONFIG += c++17 cmdline
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-
+        album.cpp \
+        artista.cpp \
+        cancion.cpp \
+        cargar_catalogo.cpp \
+        catalogo.cpp \
+        credito.cpp \
         main.cpp \
+        plan_estandar.cpp \
+        plan_premium.cpp
         mensaje_publicitario.cpp \
         sistema.cpp \
         usuario.cpp
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -19,6 +27,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    album.h \
+    artista.h \
+    cancion.h \
+    cargar_catalogo.h \
+    catalogo.h \
+    credito.h \
+    plan_estandar.h \
+    plan_premium.h
     mensaje_publicitario.h \
     sistema.h \
     usuario.h

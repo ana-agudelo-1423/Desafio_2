@@ -1,0 +1,21 @@
+id;idArtista;nombre;fechaYYYYMMDD;sello;portada;puntuacion;genero1;genero2;genero3;genero4
+101;1;Laundry Service;20011113;Sony;/users/storage/shakira/image/laundry\ service.png;9;Pop;Latina;;
+201;2;11:11;20190517;Sony;/users/storage/maluma/image/11\:11.png;8;Latina;Pop;;
+301;3;Manana Sera Bonito;20230224;Universal;/users/storage/karol\ g/image/manana\ sera\ bonito.png;9;Latina;Pop;;
+401;4;Colores;20200320;Universal;/users/storage/j\ balvin/image/colores.png;8;Latina;Hip\ Hop;;
+501;5;Un Verano Sin Ti;20220506;Rimas;/users/storage/bad\ bunny/image/un\ verano\ sin\ ti.png;10;Latina;Hip\ Hop;Pop;
+601;6;Saturno;20221111;Sony;/users/storage/rauw\ alejandro/image/saturno.png;8;Latina;Electronica;;
+701;7;Un Dia Normal;20020521;Universal;/users/storage/juanes/image/un\ dia\ normal.png;8;Rock;Latina;;
+801;8;Dharma;20220128;Universal;/users/storage/sebastian\ yatra/image/dharma.png;8;Latina;Pop;;
+901;9;Por Primera Vez;20200417;Sony;/users/storage/camilo/image/por\ primera\ vez.png;8;Latina;Pop;;
+1001;10;Cumbiana;20200522;Sony;/users/storage/carlos\ vives/image/cumbiana.png;8;Latina;;
+1101;11;MOR No Le Temas a la Oscuridad;20230929;Universal;/users/storage/feid/image/mor\ no\ le\ temas.png;8;Latina;Pop;;
+1201;12;Ilusion;20110531;Sony;/users/storage/fonseca/image/ilusion.png;7;Latina;Pop;;
+1301;13;2000;20230519;Sony;/users/storage/manuel\ turizo/image/2000.png;8;Latina;Pop;;
+1401;14;Balas Perdidas;20181102;Universal;/users/storage/morat/image/balas\ perdidas.png;8;Latina;Pop;;
+1501;15;Motomami;20220318;Sony;/users/storage/rosalia/image/motomami.png;9;Latina;Pop;Electronica;
+1601;16;Nibiru;20191129;Sony;/users/storage/ozuna/image/nibiru.png;8;Latina;Pop;;
+1701;17;Legendaddy;20220324;Universal;/users/storage/daddy\ yankee/image/legendaddy.png;9;Latina;Hip\ Hop;;
+1801;18;Infinity;20211126;Sony;/users/storage/nicky\ jam/image/infinity.png;7;Latina;Hip\ Hop;;
+1901;19;Versions of Me;20220412;Warner;/users/storage/anitta/image/versions\ of\ me.png;8;Latina;Pop;;
+2001;20;A Medio Vivir;19950912;Sony;/users/storage/ricky\ martin/image/a\ medio\ vivir.png;8;Latina;Pop;;
