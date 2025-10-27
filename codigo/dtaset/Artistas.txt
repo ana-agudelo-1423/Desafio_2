@@ -1,0 +1,51 @@
+id;edad;nombre;pais
+1;47;Shakira;Colombia
+2;30;Maluma;Colombia
+3;33;Karol G;Colombia
+4;39;J Balvin;Colombia
+5;30;Bad Bunny;Puerto Rico
+6;31;Rauw Alejandro;Puerto Rico
+7;49;Juanes;Colombia
+8;36;Sebastian Yatra;Colombia
+9;32;Camilo;Colombia
+10;45;Carlos Vives;Colombia
+11;32;Feid;Colombia
+12;41;Fonseca;Colombia
+13;27;Manuel Turizo;Colombia
+14;31;Morat;Colombia
+15;34;Rosalia;España
+16;29;Ozuna;Puerto Rico
+17;38;Daddy Yankee;Puerto Rico
+18;42;Nicky Jam;Puerto Rico
+19;32;Anitta;Brasil
+20;48;Ricky Martin;Puerto Rico
+21;35;Dua Lipa;Reino Unido
+22;34;Taylor Swift;Estados Unidos
+23;30;Billie Eilish;Estados Unidos
+24;33;Ed Sheeran;Reino Unido
+25;36;Bruno Mars;Estados Unidos
+26;29;The Weeknd;Canadá
+27;40;Kanye West;Estados Unidos
+28;37;Drake;Canadá
+29;45;Beyoncé;Estados Unidos
+30;38;Rihanna;Barbados
+31;44;Katy Perry;Estados Unidos
+32;35;Ariana Grande;Estados Unidos
+33;41;Lady Gaga;Estados Unidos
+34;46;Marc Anthony;Estados Unidos
+35;43;Enrique Iglesias;España
+36;39;Wisin;Puerto Rico
+37;40;Yandel;Puerto Rico
+38;36;Don Omar;Puerto Rico
+39;33;Natti Natasha;República Dominicana
+40;31;Farruko;Puerto Rico
+41;29;Myke Towers;Puerto Rico
+42;28;Blessd;Colombia
+43;26;Ryan Castro;Colombia
+44;25;Young Miko;Puerto Rico
+45;27;Maria Becerra;Argentina
+46;30;Paulo Londra;Argentina
+47;35;Tini;Argentina
+48;42;Diego Torres;Argentina
+49;38;Andrés Cepeda;Colombia
+50;44;Fanny Lu;Colombia
