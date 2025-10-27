@@ -72,5 +72,26 @@ void MensajePublicitario::mostrarMensaje() const
     cout << mensaje << endl;
     cout << "+----------------------------------------+" << endl;
     cout << "|      FIN MENSAJE PUBLICITARIO          |" << endl;
-    cout << "+----------------------------------------+" << endl;
+    cout << "+----------------------------------------+" << endl;
+}
+
+void MensajePublicitario::mostrarMensaje() {
+
+    incrementarContador();
+
+
+    cout << "\n+----------------------------------------+" << endl;
+    cout << "|        MENSAJE PUBLICITARIO            |" << endl;
+
+    cout << "|  Categoria: " << categoria;
+    int espacios = 26 - (int)categoria.length();
+    if (espacios < 0) espacios = 0;
+    for (int s = 0; s < espacios; ++s) std::cout << ' ';
+    cout << "|" << std::endl;
+
+    cout << "+----------------------------------------+" << endl;
+    cout << mensaje << endl;
+    cout << "+----------------------------------------+" << endl;
+    cout << "|      FIN MENSAJE PUBLICITARIO          |" << endl;
+    cout << "+----------------------------------------+" << endl;
 }

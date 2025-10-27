@@ -25,6 +25,7 @@ public:
     bool esCategoriaValida() const;
     void mostrarMensaje();  // Sin const porque modifica vecesMostrado
     void incrementarContador();  // Esta declaración debe existir
+    void mostrarMensaje() const;
 };
 
 #endif
